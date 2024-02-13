@@ -1,0 +1,227 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos específicos para secciones */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #ff4d4d;
+}
+
+
+
+/* Otros estilos específicos pueden ir aquí */
+
+/* Estilos para la sección de historia */
+#historia {
+    background-color: #f9e1f9; /* Color de fondo pastel */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative; /* Necesario para la animación de lluvia de corazones */
+}
+
+.historia-container {
+    text-align: center; /* Centra el contenido */
+    position: relative; /* Necesario para la animación de lluvia de corazones */
+    background-color: #f9e1f9; /* Color de fondo pastel */
+    padding: 20px; /* Ajuste del espacio interior */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.historia-container p {
+    font-size: 18px;
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 20px;
+    color: #666; /* Color de texto gris oscuro */
+    font-style: italic; /* Estilo de fuente cursiva */
+    opacity: 0; /* Inicialmente oculto */
+}
+
+.centered {
+    display: inline-block; /* Permite centrar el texto */
+}
+
+/* Animación de fade-in */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de lluvia de corazones */
+@keyframes rain {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.heart-rain-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Asegura que esté detrás del contenido de la historia */
+}
+
+.heart-rain {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rain 4s linear infinite;
+    opacity: 0.7;
+}
+
+/* Estilos específicos para los corazones de la animación */
+.heart-rain .heart {
+    position: absolute;
+    top: -20px;
+    left: calc(10% + 80% * random());
+    font-size: 24px;
+    color: black; /* Cambia el color del corazón a negro */
+    animation: fall 4s linear infinite, /* Animación de caída */
+               floating 2s linear infinite; /* Animación de flotación */
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Efecto de resaltado al pasar el cursor sobre el texto */
+.historia-container p:hover {
+    color: #ff4d4d; /* Cambia el color del texto al pasar el cursor */
+    font-weight: bold; /* Resalta el texto */
+}
+
+
+#galeria {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.carousel {
+    display: inline-block; /* Hace que el carrusel se centre correctamente */
+}
+
+#playlist {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.playlist {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.playlist li {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.song {
+    position: relative;
+    overflow: hidden;
+}
+
+.song img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.song:hover img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+}
+
+.details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.audio-controls {
+    margin-top: 10px;
+    text-align: center;
+}
