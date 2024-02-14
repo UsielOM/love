@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amor Eterno</title>
+    <title>Nuestro Amor Eterno</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo Amor Eterno">
+            <img src="/love/img/1.png" alt="Logo Amor Eterno" style="width: 50px;">
         </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#historia">Historia de Amor</a></li>
+                <li><a href="#historia">Nuestra Historia</a></li>
                 <li><a href="#galeria">Galería de Fotos</a></li>
                 <li><a href="#playlist">Playlist Romántica</a></li>
                 <li><a href="#mensajes">Mensajes de Amor</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#contacto">TE AMO</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="inicio">
-            <h1>¡Bienvenidos a Amor Eterno!</h1>
+            <h1>¡Bienvenida Mi Amor!</h1>
             <p>Descubre nuestra historia de amor...</p>
             <a href="#historia" class="btn">Comenzar</a>
         </section>
@@ -44,7 +47,7 @@
             </div>
             <div class="historia-container">
                 <p class="fade-in centered">Nos encontramos en el lugar más inesperado, donde de la nada comenzamos a hablar. Me atreví a dirigirme a ti sin saber nada de ti, consciente de la posibilidad de que tal vez no existieras.</p>
-                <p class="fade-in centered">Fue un día que ni siquiera tenía planeado salir, y mucho menos esperaba que conocería al amor de mi vida. Un impulso me llevó a salir y atreverme a pedirte que me acompañaras.</p>
+                <p class="fade-in centered">Fue un día que ni siquiera tenía planeado salir, y mucho menos esperaba que conocería al amor de mi vida. Un impulso me llevó a salir y atreverme a pedirte que me dejaras acompañarte.</p>
                 <p class="fade-in centered">Gracias a ese día, conocí a la persona más increíble y hermosa del mundo. Hoy, celebramos nuestro primer año y seis meses juntos.</p>
             </div>
         </section>
@@ -59,17 +62,21 @@
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                                 <!-- Agrega más indicadores según la cantidad de imágenes -->
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block mw-100" style="width: 310px;" src="./img/3.jpg" alt="Primera imagen">
+                                    <img class="d-block mw-100" style="width: 310px;" src="./img/carrucel/1.png" alt="Primera imagen">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block mw-100" style="width: 310px;" src="./img/4.jpg" alt="Segunda imagen">
+                                    <img class="d-block mw-100" style="width: 310px;" src="./img/carrucel/2.png" alt="Segunda imagen">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block mw-100" style="width: 310px;" src="./img/5.jpg" alt="Tercera imagen">
+                                    <img class="d-block mw-100" style="width: 310px;" src="./img/carrucel/3.png" alt="Tercera imagen">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block mw-100" style="width: 310px;" src="./img/carrucel/4.png" alt="Tercera imagen">
                                 </div>
                                 <!-- Agrega más elementos .carousel-item para más imágenes -->
                             </div>
@@ -92,7 +99,7 @@
             <ul class="playlist">
                 <li>
                     <div class="song">
-                        <img src="./img//2.jpg" alt="Miniatura de álbum o imagen de artista">
+                        <img src="./img/Musica/1.png" alt="Miniatura de álbum o imagen de artista">
                         <div class="details">
                             <audio controls>
                                 <source src="cancion1.mp3" type="audio/mpeg">
@@ -117,25 +124,80 @@
                 <!-- Agrega más elementos de lista para más canciones -->
             </ul>
         </section>
-        
-        
-        
-        <section id="mensajes">
+
+
+        <section id="mensajes" class="section-contenedor">
             <h2>Mensajes de Amor</h2>
-            <!-- Aquí van los mensajes de amor -->
+            <div id="mensaje-contenedor">
+                <!-- Aquí se mostrarán los mensajes de amor -->
+            </div>
         </section>
+
+
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2>TE MO MUCHO</h2>
             <!-- Aquí va el formulario de contacto -->
         </section>
+
     </main>
     <footer>
-        <p>¡Gracias por visitar Amor Eterno!</p>
+        <p>¡Gracias por ser mi Amor Eterno!</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Array de mensajes de amor
+        var mensajesAmor = [
+            "Eres mi luz en la oscuridad.",
+            "Mi corazón late más fuerte cuando estoy contigo.",
+            "Tu amor es mi inspiración diaria.",
+            "No puedo imaginar mi vida sin ti.",
+            "Eres mi sueño hecho realidad.",
+            "Cada momento contigo es un regalo.",
+            "Tu amor es la melodía de mi corazón.",
+            "Contigo, cada día es San Valentín.",
+            "Eres la razón por la que sonrío todos los días.",
+            "Tú y yo, juntos para siempre.",
+            "Eres mi amor eterno.",
+            "Nuestro amor es como una rosa que nunca se desvanece.",
+            "Eres mi refugio en medio de la tormenta.",
+            "Tu amor es mi mayor tesoro.",
+            "Nuestro amor es un cuento de hadas.",
+            "Eres el centro de mi universo.",
+            "Contigo, la vida es más hermosa.",
+            "Eres mi otra mitad, mi alma gemela.",
+            "Tu amor es el regalo más preciado que he recibido.",
+            "Nuestro amor es más fuerte que cualquier adversidad."
+        ];
 
+        // Función para mostrar un mensaje de amor aleatorio en una posición aleatoria
+        function mostrarMensaje() {
+            var mensajeIndex = Math.floor(Math.random() * mensajesAmor.length);
+            var mensaje = mensajesAmor[mensajeIndex];
+            var mensajeContenedor = document.getElementById("mensaje-contenedor");
+            var nuevoMensaje = document.createElement("p");
+            nuevoMensaje.textContent = mensaje;
+            nuevoMensaje.style.position = "absolute";
+            nuevoMensaje.style.left = Math.random() * (mensajeContenedor.offsetWidth - 200) + "px";
+            nuevoMensaje.style.top = Math.random() * (mensajeContenedor.offsetHeight - 40) + "px";
+            nuevoMensaje.style.opacity = "0";
+            mensajeContenedor.appendChild(nuevoMensaje);
+            setTimeout(function() {
+                nuevoMensaje.style.opacity = "1";
+            }, 100);
+        }
+
+        // Mostrar mensajes de amor aleatorios cada 3 segundos
+        setInterval(function() {
+            mostrarMensaje();
+            var mensajes = document.querySelectorAll("#mensaje-contenedor p");
+            if (mensajes.length > 5) {
+                mensajes[0].remove();
+            }
+        }, 2000);
+    </script>
 </body>
+
 </html>

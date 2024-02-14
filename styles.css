@@ -1,4 +1,5 @@
 /* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,41 +7,150 @@ body {
 }
 
 header {
-    background-color: #f9f9f9;
+    background-color: #ffcccb;
+    /* Color de fondo rosa suave */
     padding: 20px 0;
+    /* Espacio interior superior e inferior */
     text-align: center;
+    /* Centrar el contenido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 .logo img {
-    width: 100px;
+    vertical-align: middle;
+    /* Alinear verticalmente la imagen del logo */
+    margin-right: 10px;
+    /* Espacio a la derecha de la imagen del logo */
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    /* Eliminar viñetas de la lista */
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+    /* Mostrar elementos de lista en línea */
     margin-right: 20px;
+    /* Espacio entre elementos de la lista */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    /* Eliminar subrayado de los enlaces */
+    color: #4a4a4a;
+    /* Color de texto gris oscuro */
+    /* Fuente cursiva */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    transition: color 0.3s ease;
+    /* Transición suave para el color del texto */
+}
+
+nav ul li a:hover {
+    color: #ff1493;
+    /* Cambiar color del texto al pasar el cursor */
 }
 
 main {
     padding: 20px;
 }
 
-.btn {
-    background-color: #ff4d4d;
+inicio {
+    background-image: url('ruta/a/tu/imagen.jpg');
+    /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    /* La imagen de fondo cubrirá todo el contenedor */
+    background-position: center;
+    /* La imagen de fondo se posicionará en el centro */
+    background-attachment: fixed;
+    /* La imagen de fondo permanecerá fija al hacer scroll */
+    text-align: center;
     color: #fff;
+    /* Color de texto blanco */
+    padding: 100px 0;
+    /* Espacio interior superior e inferior */
+    animation: fadeIn 1s ease;
+    /* Animación de desvanecimiento al cargar */
+}
+
+#inicio h1 {
+    font-family: 'Segoe Script', cursive;
+    /* Fuente cursiva para un toque romántico */
+    font-size: 3em;
+    /* Tamaño de fuente grande */
+    margin-bottom: 20px;
+    /* Espacio inferior */
+    animation: slideInDown 1s ease;
+    /* Animación de deslizamiento hacia abajo al cargar */
+}
+
+#inicio p {
+    font-size: 1.5em;
+    /* Tamaño de fuente mediano */
+    margin-bottom: 30px;
+    /* Espacio inferior */
+    animation: slideInUp 1s ease;
+    /* Animación de deslizamiento hacia arriba al cargar */
+}
+
+.btn {
+    display: inline-block;
     padding: 10px 20px;
+    font-size: 1.2em;
     text-decoration: none;
-    border-radius: 5px;
+    color: #fff;
+    background-color: #ff1493;
+    /* Color de fondo rosa */
+    border-radius: 25px;
+    /* Bordes redondeados */
+    border: 2px solid #fff;
+    /* Borde blanco */
+    transition: background-color 0.3s ease;
+    /* Transición suave para el color de fondo */
+    animation: fadeIn 1s ease;
+    /* Animación de desvanecimiento al cargar */
+}
+
+.btn:hover {
+    background-color: #ff69b4;
+    /* Cambio de color al pasar el cursor */
+}
+
+
+/* Animaciones */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 footer {
@@ -50,7 +160,9 @@ footer {
     padding: 20px 0;
 }
 
+
 /* Estilos específicos para secciones */
+
 section {
     margin-bottom: 40px;
 }
@@ -60,40 +172,56 @@ section h2 {
 }
 
 
-
 /* Otros estilos específicos pueden ir aquí */
 
+
 /* Estilos para la sección de historia */
+
 #historia {
-    background-color: #f9e1f9; /* Color de fondo pastel */
+    background-color: #f9e1f9;
+    /* Color de fondo pastel */
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    position: relative; /* Necesario para la animación de lluvia de corazones */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    position: relative;
+    /* Necesario para la animación de lluvia de corazones */
 }
 
 .historia-container {
-    text-align: center; /* Centra el contenido */
-    position: relative; /* Necesario para la animación de lluvia de corazones */
-    background-color: #f9e1f9; /* Color de fondo pastel */
-    padding: 20px; /* Ajuste del espacio interior */
-    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    /* Centra el contenido */
+    position: relative;
+    /* Necesario para la animación de lluvia de corazones */
+    background-color: #f9e1f9;
+    /* Color de fondo pastel */
+    padding: 20px;
+    /* Ajuste del espacio interior */
+    border-radius: 10px;
+    /* Bordes redondeados */
 }
 
 .historia-container p {
     font-size: 18px;
-    line-height: 1.6; /* Espaciado entre líneas */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
     margin-bottom: 20px;
-    color: #666; /* Color de texto gris oscuro */
-    font-style: italic; /* Estilo de fuente cursiva */
-    opacity: 0; /* Inicialmente oculto */
+    color: #666;
+    /* Color de texto gris oscuro */
+    font-style: italic;
+    /* Estilo de fuente cursiva */
+    opacity: 0;
+    /* Inicialmente oculto */
 }
 
 .centered {
-    display: inline-block; /* Permite centrar el texto */
+    display: inline-block;
+    /* Permite centrar el texto */
 }
 
+
 /* Animación de fade-in */
+
 .fade-in {
     animation: fadeIn 1s ease forwards;
 }
@@ -107,7 +235,9 @@ section h2 {
     }
 }
 
+
 /* Animación de lluvia de corazones */
+
 @keyframes rain {
     0% {
         transform: translateY(-100%);
@@ -124,7 +254,8 @@ section h2 {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; /* Asegura que esté detrás del contenido de la historia */
+    z-index: -1;
+    /* Asegura que esté detrás del contenido de la historia */
 }
 
 .heart-rain {
@@ -136,19 +267,24 @@ section h2 {
     opacity: 0.7;
 }
 
+
 /* Estilos específicos para los corazones de la animación */
+
 .heart-rain .heart {
     position: absolute;
     top: -20px;
     left: calc(10% + 80% * random());
     font-size: 24px;
-    color: black; /* Cambia el color del corazón a negro */
+    color: black;
+    /* Cambia el color del corazón a negro */
     animation: fall 4s linear infinite, /* Animación de caída */
-               floating 2s linear infinite; /* Animación de flotación */
+    floating 2s linear infinite;
+    /* Animación de flotación */
 }
 
 @keyframes floating {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0);
     }
     50% {
@@ -156,19 +292,24 @@ section h2 {
     }
 }
 
+
 /* Efecto de resaltado al pasar el cursor sobre el texto */
+
 .historia-container p:hover {
-    color: #ff4d4d; /* Cambia el color del texto al pasar el cursor */
-    font-weight: bold; /* Resalta el texto */
+    color: #ff4d4d;
+    /* Cambia el color del texto al pasar el cursor */
+    font-weight: bold;
+    /* Resalta el texto */
 }
 
-
 #galeria {
-    text-align: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
 }
 
 .carousel {
-    display: inline-block; /* Hace que el carrusel se centre correctamente */
+    display: inline-block;
+    /* Hace que el carrusel se centre correctamente */
 }
 
 #playlist {
@@ -224,4 +365,84 @@ section h2 {
 .audio-controls {
     margin-top: 10px;
     text-align: center;
+}
+
+#mensajes {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#mensaje-contenedor {
+    position: relative;
+    width: 100%;
+    /* Ancho del contenedor al 100% */
+    max-width: 100%;
+    padding: 20px;
+    line-height: 1.5;
+    /* Ajusta la altura de línea para mejorar la legibilidad */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 500px;
+}
+
+#mensaje-contenedor p {
+    margin: 30px;
+    line-height: 1.5;
+    font-family: "Segoe Script", cursive;
+    /* Una fuente cursiva para un toque romántico */
+    font-size: 15px;
+    /* Tamaño de fuente ligeramente más grande */
+    color: #7c3e50;
+    /* Un color de texto suave */
+    transition: text-shadow 0.3s ease;
+    /* Transición suave para el efecto */
+}
+
+#mensaje-contenedor p:hover {
+    text-shadow: 0 0 5px rgb(247, 242, 0);
+    /* Efecto de iluminación al pasar el cursor */
+}
+
+.section-contenedor {
+    margin: 0 auto;
+    border: 1px solid #e6b2c8;
+    /* Un borde rosa claro */
+    background-color: #fce4ec;
+    /* Un color de fondo rosa pastel */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Una sombra suave */
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+}
+
+#contacto {
+    background-image: url('./img/fondo.png');
+    /* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    /* La imagen de fondo cubrirá todo el contenedor */
+    background-position: center;
+    /* La imagen de fondo se posicionará en el centro */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen de fondo */
+    height: 100vh;
+    /* La altura de la sección será del 100% del viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-family: 'Segoe Script', cursive;
+    /* Fuente cursiva para un toque romántico */
+    font-size: 4em;
+    /* Tamaño de fuente grande */
+    color: #ff1493;
+    /* Color rosa brillante */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    /* Sombra de texto para resaltar */
 }
